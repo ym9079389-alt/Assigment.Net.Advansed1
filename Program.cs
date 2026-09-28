@@ -154,6 +154,11 @@ namespace Assigment.Net.Advansed1
             //covariance: out, return only, Derived > Base.
             //contravariance: in, parameter only, Base > Derived.
             #endregion
+
+            #region Q18
+            //Q18: How do static members work in generic types ?
+            //Each closed constructed type has its own separate static members
+            #endregion
         }
         #region @4
         public static void Swap<T>(ref T x,ref T y)
