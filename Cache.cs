@@ -31,9 +31,14 @@ namespace Assigment.Net.Advansed1
                 }
                 return default;
             }
+            public bool Contains(TKey key)
+            {
+                return Find(key) != null;
+            }
 
             public TValue Get(TKey key)
             {
+                var item = Find(key);
                 if (Contains(key))
                     return Find(key).Value;
                 return default;
@@ -45,5 +50,6 @@ namespace Assigment.Net.Advansed1
                 if (item == null) return false;
                 return _items.Remove(item);
             }
+
     }
 }
