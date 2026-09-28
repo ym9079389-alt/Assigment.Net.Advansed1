@@ -121,6 +121,11 @@ namespace Assigment.Net.Advansed1
             //    public T Feed() => new T();
             //}
             #endregion
+
+            #region Q13
+            //Q13: What does the 'default' keyword do in generics ?
+            //Returns the default value of T: null for reference types, 0 for numbers, false for bool.
+            #endregion
         }
         #region @4
         public static void Swap<T>(ref T x,ref T y)
