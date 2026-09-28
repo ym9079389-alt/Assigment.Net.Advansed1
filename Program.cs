@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region Q1
+            //Q1: What is a generic class? Why use generics?
+            //A class with a type parameter T set at usage time.
+            //type safety, code reuse, no boxing/Unboxing.
+            #endregion
         }
     }
 }
