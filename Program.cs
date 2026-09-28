@@ -76,6 +76,19 @@ namespace Assigment.Net.Advansed1
             //  public T Value;
             //}
             #endregion
+
+            #region Q9
+            //Q9: What is the 'new()' constraint? Write an example.
+            //T must have parameterless constructor.
+
+            //class Box<T> where T : new()
+            //{
+                //public T value()
+                //{
+                //   new T();
+                //}
+            //}
+            #endregion
         }
         #region @4
         public static void Swap<T>(ref T x,ref T y)
