@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel;
+using System.Data;
 using System.Data.Common;
 using System.Reflection.Metadata;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Assigment.Net.Advansed1
 {
@@ -53,6 +55,16 @@ namespace Assigment.Net.Advansed1
             #region Q6
             //Q6: What is a generic interface? Write IRepository<T>.
             //An interface with a type parameter
+            #endregion
+
+            #region Q7
+            //Q7: What is the 'struct' constraint? Write an example.
+            //T must be a value type
+
+            //public class Box<T> where T : struct
+            //{
+            //  public T Value;
+            //}
             #endregion
         }
         #region @4
