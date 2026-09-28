@@ -45,9 +45,14 @@ namespace Assigment.Net.Advansed1
             #region Q5
             //Q5: Write a generic method FindMax < T > that finds maximum value.
 
-            int[] x = { 40, 708, 90 };
-            int res = FindMax<int>(x);
-            Console.WriteLine(res);
+            //int[] x = { 40, 708, 90 };
+            //int res = FindMax<int>(x);
+            //Console.WriteLine(res);
+            #endregion
+
+            #region Q6
+            //Q6: What is a generic interface? Write IRepository<T>.
+            //An interface with a type parameter
             #endregion
         }
         #region @4
@@ -68,10 +73,14 @@ namespace Assigment.Net.Advansed1
             for (int i = 1; i < items.Length; i++)
             {
                 if (items[i].CompareTo(max) > 0)
+                {
                     max = items[i];
+                }                
             }
             return max;
         }
         #endregion
+
+        
     }
 }
