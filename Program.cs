@@ -99,6 +99,18 @@ namespace Assigment.Net.Advansed1
             //    public bool IsGreater(T a, T b) => a.CompareTo(b) > 0;
             //}
             #endregion
+
+            #region Q11
+            //Q11: What is the base class constraint? Write an example.
+            //T must inherit from a specific base class
+
+            //class Animal { public void Eat() { } }
+
+            //class Zoo<T> where T : Animal
+            //{
+            //    public void Feed(T animal) => animal.Eat();
+            //}
+            #endregion
         }
         #region @4
         public static void Swap<T>(ref T x,ref T y)
