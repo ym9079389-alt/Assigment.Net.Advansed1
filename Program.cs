@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Data.Common;
 using System.Reflection.Metadata;
 
 namespace Assigment.Net.Advansed1
@@ -27,10 +28,29 @@ namespace Assigment.Net.Advansed1
             //Q3: What are multiple type parameters? Write Pair<TKey, TValue>.
             //A generic type with more than one type parameter
 
-            Pair<int, double> pair = new Pair<int, double>(5, 1.0);
-            Console.WriteLine(pair.Key);
-            Console.WriteLine(pair.Value);
+            //Pair<int, double> pair = new Pair<int, double>(5, 1.0);
+            //Console.WriteLine(pair.Key);
+            //Console.WriteLine(pair.Value);
+            #endregion
+
+            #region Q4
+            //Q4: What is a generic method? Write Swap<T> method.
+            //A method with its own type parameter, even inside a non-generic class
+
+            int x = 5;
+            int y = 77;
+            Swap<int>(ref x, ref y);
             #endregion
         }
+        #region @4
+        public static void Swap<T>(ref T x,ref T y)
+        {
+            T temp = x;
+            x = y;
+            y = temp;
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+        }
+        #endregion
     }
 }
