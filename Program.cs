@@ -142,6 +142,12 @@ namespace Assigment.Net.Advansed1
             //Allows assigning a more derived type where a base type is expected.
             //T is used only as output.
             #endregion
+
+            #region Q16
+            //Q16: What is contravariance? Explain the 'in' keyword.
+            //Allows using a base type where a more derived type is expected.
+            //T is used only as input.
+            #endregion
         }
         #region @4
         public static void Swap<T>(ref T x,ref T y)
