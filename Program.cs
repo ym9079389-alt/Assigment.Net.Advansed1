@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.Common;
 using System.Reflection.Metadata;
 using System.Security.Cryptography.X509Certificates;
+using Microsoft.VisualBasic;
 
 namespace Assigment.Net.Advansed1
 {
@@ -109,6 +110,15 @@ namespace Assigment.Net.Advansed1
             //class Zoo<T> where T : Animal
             //{
             //    public void Feed(T animal) => animal.Eat();
+            //}
+            #endregion
+
+            #region Q12
+            //Q12: How do you apply multiple constraints? Write an example.
+
+            //class cat<T> where T : Animal, IComparable<T>, new()
+            //{
+            //    public T Feed() => new T();
             //}
             #endregion
         }
