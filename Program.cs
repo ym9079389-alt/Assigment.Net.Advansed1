@@ -126,6 +126,16 @@ namespace Assigment.Net.Advansed1
             //Q13: What does the 'default' keyword do in generics ?
             //Returns the default value of T: null for reference types, 0 for numbers, false for bool.
             #endregion
+
+            #region Q14
+            //Q14: Write a SafeList < T > that returns default when the index is invalid.
+
+            SafeList<int> safeList = new SafeList<int>();
+            safeList.Add(5);
+            safeList.Add(7);
+            safeList.Add(2);
+            Console.WriteLine(safeList.Get(3));
+            #endregion
         }
         #region @4
         public static void Swap<T>(ref T x,ref T y)
