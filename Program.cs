@@ -148,6 +148,12 @@ namespace Assigment.Net.Advansed1
             //Allows using a base type where a more derived type is expected.
             //T is used only as input.
             #endregion
+
+            #region Q17
+            //Q17: What is the difference between covariance and contravariance?
+            //covariance: out, return only, Derived > Base.
+            //contravariance: in, parameter only, Base > Derived.
+            #endregion
         }
         #region @4
         public static void Swap<T>(ref T x,ref T y)
