@@ -159,6 +159,11 @@ namespace Assigment.Net.Advansed1
             //Q18: How do static members work in generic types ?
             //Each closed constructed type has its own separate static members
             #endregion
+
+            #region Q19
+            //Q19: How can you inherit from a generic class?
+            //specify the type at inheritance.
+            #endregion
         }
         #region @4
         public static void Swap<T>(ref T x,ref T y)
