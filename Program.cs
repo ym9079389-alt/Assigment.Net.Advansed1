@@ -37,9 +37,17 @@ namespace Assigment.Net.Advansed1
             //Q4: What is a generic method? Write Swap<T> method.
             //A method with its own type parameter, even inside a non-generic class
 
-            int x = 5;
-            int y = 77;
-            Swap<int>(ref x, ref y);
+            //int x = 5;
+            //int y = 77;
+            //Swap<int>(ref x, ref y);
+            #endregion
+
+            #region Q5
+            //Q5: Write a generic method FindMax < T > that finds maximum value.
+
+            int[] x = { 40, 708, 90 };
+            int res = FindMax<int>(x);
+            Console.WriteLine(res);
             #endregion
         }
         #region @4
@@ -50,6 +58,19 @@ namespace Assigment.Net.Advansed1
             y = temp;
             Console.WriteLine(x);
             Console.WriteLine(y);
+        }
+        #endregion
+
+        #region Q5
+        static T FindMax<T>(T[] items) where T : IComparable<T>
+        {
+            T max = items[0];
+            for (int i = 1; i < items.Length; i++)
+            {
+                if (items[i].CompareTo(max) > 0)
+                    max = items[i];
+            }
+            return max;
         }
         #endregion
     }
