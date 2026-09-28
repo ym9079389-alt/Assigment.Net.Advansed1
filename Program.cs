@@ -66,6 +66,16 @@ namespace Assigment.Net.Advansed1
             //  public T Value;
             //}
             #endregion
+
+            #region Q8
+            //Q8: What is the 'class' constraint? Write an example.
+            //T must be a reference type
+
+            //public class Box<T> where T : class
+            //{
+            //  public T Value;
+            //}
+            #endregion
         }
         #region @4
         public static void Swap<T>(ref T x,ref T y)
