@@ -130,11 +130,17 @@ namespace Assigment.Net.Advansed1
             #region Q14
             //Q14: Write a SafeList < T > that returns default when the index is invalid.
 
-            SafeList<int> safeList = new SafeList<int>();
-            safeList.Add(5);
-            safeList.Add(7);
-            safeList.Add(2);
-            Console.WriteLine(safeList.Get(3));
+            //SafeList<int> safeList = new SafeList<int>();
+            //safeList.Add(5);
+            //safeList.Add(7);
+            //safeList.Add(2);
+            //Console.WriteLine(safeList.Get(3));
+            #endregion
+
+            #region Q15
+            //Q15: What is covariance? Explain the 'out' keyword.
+            //Allows assigning a more derived type where a base type is expected.
+            //T is used only as output.
             #endregion
         }
         #region @4
