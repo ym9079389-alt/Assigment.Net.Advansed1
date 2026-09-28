@@ -83,10 +83,20 @@ namespace Assigment.Net.Advansed1
 
             //class Box<T> where T : new()
             //{
-                //public T value()
-                //{
-                //   new T();
-                //}
+            //public T value()
+            //{
+            //   new T();
+            //}
+            //}
+            #endregion
+
+            #region Q10
+            //Q10: What is the interface constraint? Write an example.
+            //T must implement a specific interface
+
+            //class Box<T> where T : IComparable<T>
+            //{
+            //    public bool IsGreater(T a, T b) => a.CompareTo(b) > 0;
             //}
             #endregion
         }
